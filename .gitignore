@@ -1,0 +1,6 @@
+*.txt
+*.class
+.DS_Store
+.*
+!/.gitignore
+
