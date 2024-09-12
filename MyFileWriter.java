@@ -24,6 +24,9 @@ public class MyFileWriter {
         } catch (IOException e){
             e.printStackTrace();
         }
+
+        printFileSize("example1.txt");
+        printFileSize(".myPassword.txt");
     }
 
     public static void printFileSize(String fileName){
