@@ -24,5 +24,16 @@ public class MyFileWriter {
         } catch (IOException e){
             e.printStackTrace();
         }
+
+        printFileSize("example1.txt");
+        printFileSize(".myPassword.txt");
+    }
+
+    // printFIleSize prints the length of the contents of the file.
+    public static void printFileSize(String fileName){
+        File file = new File(fileName);
+		if (!file.exists() || !file.isFile()) return;
+
+        System.out.println("The length of the file is: " file.length() + " bytes");
     }
 }
