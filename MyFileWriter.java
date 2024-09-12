@@ -25,4 +25,11 @@ public class MyFileWriter {
             e.printStackTrace();
         }
     }
+
+    public static void printFileSize(String fileName){
+        File file = new File(fileName);
+		if (!file.exists() || !file.isFile()) return;
+
+        System.out.println( file.length() + " bytes");
+    }
 }
