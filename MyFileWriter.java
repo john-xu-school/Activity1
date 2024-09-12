@@ -34,6 +34,6 @@ public class MyFileWriter {
         File file = new File(fileName);
 		if (!file.exists() || !file.isFile()) return;
 
-        System.out.println("The length of the file is: " file.length() + " bytes");
+        System.out.println("The length of the file is: " + file.length() + " bytes");
     }
 }
